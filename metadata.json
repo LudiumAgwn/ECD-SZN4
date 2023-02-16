@@ -1,0 +1,13 @@
+{ 
+  "description": "NFT for ECD Testing",
+  "external_url": "https://twitter.com/ludium_official",
+  "image": "https://ipfs.filebase.io/ipfs/QmUHJSfofQPMvrsKPPjGBDp9QnY7MeNCG3nt8JmzqBstZL",
+  "name": "ECD Tester", 
+  "attributes": [
+    {
+        "trait_type": "Gem",
+        "value": "purple"
+    }
+  ]
+}
+    
