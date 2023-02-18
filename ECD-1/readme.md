@@ -29,9 +29,9 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
 
 
 - 아래처럼 되면 성공입니다.
+![Untitled 2](https://user-images.githubusercontent.com/49356933/219855619-3e03bc9e-d585-430f-99c9-2157de192b7d.png)
 
-![Untitled](![Untitled 3](https://user-images.githubusercontent.com/49356933/219855454-c6ea7358-b0d4-4844-a4b4-7c050657120b.png)
-)
+
 
 ### Client
 
@@ -53,22 +53,23 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
     - 기본값 서버 포트인 3042로
 
 # UI - wallet & 전송
+![Untitled 3](https://user-images.githubusercontent.com/49356933/219855454-c6ea7358-b0d4-4844-a4b4-7c050657120b.png)
 
-![Untitled 4](https://user-images.githubusercontent.com/49356933/219855462-b9a051eb-c413-4347-b004-98ffc2040cd6.png)
 
 
 - 왼쪽에는 지갑 주소Wallet address를 입력할 수 있습니다.
     - 지갑 주소 예시 (0x1)를 입력하여 계좌별 잔액을 확인해 보세요
         - 서버의 index.js 파일로 이동하면 0x1, 0x2, 0x3 총 3개의 지갑 주소가 미리 정의되어 있습니다.
-            ![Untitled 5](https://user-images.githubusercontent.com/49356933/219855475-dd8d92c0-b407-4155-ae57-86237a09c49e.png)
+            ![Untitled 4](https://user-images.githubusercontent.com/49356933/219855462-b9a051eb-c413-4347-b004-98ffc2040cd6.png)
+
             
         - 지갑 주소 칸에 0x1을 치면, 주소의 잔액이 아래처럼 나오는걸 확인할 수 있습니다.
-            ![Untitled 6](https://user-images.githubusercontent.com/49356933/219855488-678f9d79-89f8-4d4d-85ef-184eb293d2ac.png)
+            ![Untitled 5](https://user-images.githubusercontent.com/49356933/219855475-dd8d92c0-b407-4155-ae57-86237a09c49e.png)
 
             
 - 왼쪽에 지갑 주소를 입력한 상태에서 오른쪽에서 송금할 수 있습니다.
     - 0x3 지갑에서, 0xabc로 20을 보내고 각각 계좌의 잔액을 확인해 보세요.
-        ![Untitled 7](https://user-images.githubusercontent.com/49356933/219855497-a1ee84f8-5049-4860-bf80-b1e6b7942cad.png)
+        ![Untitled 6](https://user-images.githubusercontent.com/49356933/219855488-678f9d79-89f8-4d4d-85ef-184eb293d2ac.png)
         
         - 왼쪽에 지갑 주소 0x3을 입력합니다
         - 오른쪽에 금액 20을 입력한 다음, transfer를 누릅니다.
@@ -94,18 +95,18 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
     
     - 새로운 터미널 2개를 엽니다. 기존의 터미널 2개는 유지해둔 채로
     
-    ![Untitled 8](https://user-images.githubusercontent.com/49356933/219855506-5c49cc51-bbc8-42c4-9276-8bd91a5ba179.png)
+    ![Untitled 7](https://user-images.githubusercontent.com/49356933/219855497-a1ee84f8-5049-4860-bf80-b1e6b7942cad.png)
 
     
 - 클라이언트와 서버 양쪽에 cryptography 라이브러리를 설치합니다
     
-    ![Untitled 9](https://user-images.githubusercontent.com/49356933/219855515-43f8b817-3031-4b28-a55d-98f427bfcf75.png)
+    ![Untitled 8](https://user-images.githubusercontent.com/49356933/219855506-5c49cc51-bbc8-42c4-9276-8bd91a5ba179.png)
 
     
 
 - package.json이 업데이트가 되면 잘 된 것입니다.
     
-    ![Untitled 10](https://user-images.githubusercontent.com/49356933/219855526-6ee584a9-0014-43e7-b44a-3f705ee4eb5f.png)
+    ![Untitled 9](https://user-images.githubusercontent.com/49356933/219855515-43f8b817-3031-4b28-a55d-98f427bfcf75.png)
 
     
 
@@ -127,8 +128,7 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
     - 실행하면 private key가 하나 랜덤하게 생성되는 스크립트입니다.
     - 이 generate 스크립트는 1회만 실행하면 됩니다.
     
-
-![Untitled 11](https://user-images.githubusercontent.com/49356933/219855533-290d1fa8-d2f2-42da-b9b7-206b7d8dc6a3.png)
+![Untitled 10](https://user-images.githubusercontent.com/49356933/219855526-6ee584a9-0014-43e7-b44a-3f705ee4eb5f.png)
 
 
 스크립트 내 코드입니다 ([깃헙 리포](https://github.com/remybar/alchemy-week1/blob/main/server/scripts/generate.js))
@@ -165,9 +165,9 @@ console.log("public key  : ", toHex(publicKey));
 - Ethereum에서 주소를 만드는 방식은, public key에 keccak hash를 적용시킨 다음, 끝의 20자리를 가져오는 겁니다.
     - 이 튜토리얼에서는 원하는 대로 하시면 됩니다. 끝의 20자리를 써도 되고, public key 전체를 사용해도 됩니다.
     - Q. public key에 keccak hash를 적용한 다음, 20자리를 잘라서 주소로 만들어 보세요.
-        
-        ![Untitled 12](https://user-images.githubusercontent.com/49356933/219855543-2f86c7cf-3bd9-496b-8359-c038819c90a2.png)
+        ![Untitled 11](https://user-images.githubusercontent.com/49356933/219855533-290d1fa8-d2f2-42da-b9b7-206b7d8dc6a3.png)
 
+        
         
         ```jsx
         
@@ -187,12 +187,14 @@ console.log("public key  : ", toHex(publicKey));
 
 - 3개의 public key를 만들었으니, 서버 파일에서 처음 준 주소 0x1 등을 이 키로 바꿔줍시다.
     
-    ![Untitled 13](https://user-images.githubusercontent.com/49356933/219855551-f28756af-9266-4514-8cc0-cf569533a240.png)
+    ![Untitled 12](https://user-images.githubusercontent.com/49356933/219855543-2f86c7cf-3bd9-496b-8359-c038819c90a2.png)
+
 
     
 - 클라이언트쪽으로 보면 키가 바뀌어 있는것을 알 수 있습니다.
     
-    ![Untitled 14](https://user-images.githubusercontent.com/49356933/219855556-612069fe-8560-4e0e-aa8d-fe5c0093033e.png)
+    ![Untitled 13](https://user-images.githubusercontent.com/49356933/219855551-f28756af-9266-4514-8cc0-cf569533a240.png)
+
 
     
 
@@ -243,8 +245,8 @@ console.log("public key  : ", toHex(publicKey));
     
     export default App;
     ```
-    
-    ![Untitled 15](https://user-images.githubusercontent.com/49356933/219855568-405e33c0-8c57-49b0-937e-045fe6f7019d.png)
+    ![Untitled 14](https://user-images.githubusercontent.com/49356933/219855556-612069fe-8560-4e0e-aa8d-fe5c0093033e.png)
+
 
     
 - 여기에서 wallet과 transfer는 각각 화면의 왼쪽, 오른쪽 콤포넌트를 담당하고 있습니다. 하나를 지우고 새로고침을 해 보면 화면 왼쪽/오른쪽이 사라지는걸 볼수 있습니다.
@@ -354,7 +356,8 @@ console.log("public key  : ", toHex(publicKey));
         
         - wallet.jsx의 다음 부분을 바꾸면 address 대신 public key를 물어보게 바꿀 수 있습니다.
             
-            ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%2015.png)
+            ![Untitled 15](https://user-images.githubusercontent.com/49356933/219855568-405e33c0-8c57-49b0-937e-045fe6f7019d.png)
+
             
 
 # 옵션 2: Signature로 권한 부여
@@ -363,5 +366,3 @@ console.log("public key  : ", toHex(publicKey));
 
 - 현재 깃헙에 업로드된 내용은 Signature로 권한을 부여한 정석적인 방법입니다.
     - Q. 업로드된 코드를 읽어본 후, 옵션 1의 결과와 어떻게 다른지 대조해 보세요.
-        
-        ( )
