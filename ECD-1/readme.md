@@ -27,7 +27,7 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
 - VScode 오른쪽 하단을 우클릭해서 new terminal을 클릭하고
 - terminal을 우클릭해서 split terminal을 눌러주세요.
 
-![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled.png)
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8326fc2c-6e73-42db-a161-13eb6f515d21/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230218%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230218T102148Z&X-Amz-Expires=86400&X-Amz-Signature=3d7cb9834bb5c2faa6d7950f6a6aadf80a9d7698387f3af2e31878505bf48685&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
 
 ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%201.png)
 
