@@ -15,8 +15,6 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
 
 # 환경 설정 및 앱 실행
 
----
-
 1. 웹을 안 해봤거나, react에 익숙하지 않다면 어려울 수 있습니다. 
 2. VScode로 진행되나, 다른 IDE를 써도 상관없습니다 
 
@@ -54,8 +52,6 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
 
 # UI - wallet & 전송
 
----
-
 ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%203.png)
 
 - 왼쪽에는 지갑 주소Wallet address를 입력할 수 있습니다.
@@ -80,7 +76,6 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
 
 # 권한 w/ Public Key cryptography
 
----
 
 - 현재 상태의 문제는, 누구든지 아무 지갑에 접속해서 송금하는게 가능하다는 점입니다.
 - 지갑의 소유자를 구분해서, 자기 지갑에서만 송금하게끔 권한을 제한해야 합니다.
@@ -118,7 +113,6 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
 
 # Private / Public key 생성하기
 
----
 
 <aside>
 💡 Ethereum cryptography library를 활용하여 랜덤 키를 생성합니다.
@@ -202,7 +196,6 @@ console.log("public key  : ", toHex(publicKey));
 
 # 옵션 1 : Private Key 로 권한 부여
 
----
 
 - Public Key는 성공적으로 만들었지만, 아직 그것을 활용하지는 않은 상태입니다.
 - 여전히 우리 앱에서는 지갑 주소를 알기만 하면 돈을 주고 받을 수 있죠.
