@@ -6,8 +6,6 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
 
 # 목차
 
----
-
 - 환경 설정 : 클라이언트 / 서버 설치
 - 간단한 프론트엔드(클라이언트 리포에 포함)를 통한 상호 작용 체험
     - public key - **four different stages of public key cryptography (이전 튜토리얼)**
