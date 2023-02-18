@@ -287,35 +287,6 @@ console.log("public key  : ", toHex(publicKey));
         ```
         
         ```jsx
-        import Wallet from "./Wallet";
-        import Transfer from "./Transfer";
-        import "./App.scss";
-        import { useState } from "react";
-        
-        function App() {
-          const [balance, setBalance] = useState(0);
-          const [user, setUser] = useState("");
-        
-          return (
-            <div className="app">
-              <Wallet
-                balance={balance}
-        				**privateKey = {privateKey}
-        				setPrivateKey = {setPrivatekey}**
-                setBalance={setBalance}
-                user={user}
-                setUser={setUser}
-              />
-              <Transfer setBalance={setBalance} user={user} privateKey = {privateKey} />
-            </div>
-          );
-        }
-        
-        export default App;
-        
-        ```
-        
-        ```jsx
         //wallet.jsx
         //bold 된 것이 github과 다른 부분 
         import server from "./server";
