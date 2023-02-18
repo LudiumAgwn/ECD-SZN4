@@ -285,6 +285,8 @@ console.log("public key  : ", toHex(publicKey));
         export default App;
         
         ```
+        
+        ```jsx
         import Wallet from "./Wallet";
         import Transfer from "./Transfer";
         import "./App.scss";
