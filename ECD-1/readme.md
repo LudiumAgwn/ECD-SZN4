@@ -4,12 +4,12 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
 
 [https://www.loom.com/share/0d3c74890b8e44a5918c4cacb3f646c4](https://www.loom.com/share/0d3c74890b8e44a5918c4cacb3f646c4)
 
-# 목차
+# 목차 : 
 
-- 환경 설정 : 클라이언트 / 서버 설치
 - 간단한 프론트엔드(클라이언트 리포에 포함)를 통한 상호 작용 체험
-    - public key - **four different stages of public key cryptography (이전 튜토리얼)**
-    - making address - to give control over someone
+    - 서버 / 클라이언트 설치 
+    - ECDSA로 public key 통신
+    - making address - to give control over someone (optional)
         - private key
         - signature
 
@@ -25,11 +25,12 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
 
 ![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8326fc2c-6e73-42db-a161-13eb6f515d21/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230218%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230218T102148Z&X-Amz-Expires=86400&X-Amz-Signature=3d7cb9834bb5c2faa6d7950f6a6aadf80a9d7698387f3af2e31878505bf48685&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
 
-![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%201.png)
+![Untitled]([1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%201.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/23e32e02-2669-4bc9-81f1-032b6a56215f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230218%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230218T102709Z&X-Amz-Expires=86400&X-Amz-Signature=92d18d4b0af8e5daab4df3b780825705349e67b54deed556f1a84f936d55a014&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject))
 
 - 아래처럼 되면 성공입니다.
 
-![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%202.png)
+![Untitled](![Untitled 3](https://user-images.githubusercontent.com/49356933/219855454-c6ea7358-b0d4-4844-a4b4-7c050657120b.png)
+)
 
 ### Client
 
@@ -52,22 +53,21 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
 
 # UI - wallet & 전송
 
-![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%203.png)
+![Untitled 4](https://user-images.githubusercontent.com/49356933/219855462-b9a051eb-c413-4347-b004-98ffc2040cd6.png)
+
 
 - 왼쪽에는 지갑 주소Wallet address를 입력할 수 있습니다.
     - 지갑 주소 예시 (0x1)를 입력하여 계좌별 잔액을 확인해 보세요
         - 서버의 index.js 파일로 이동하면 0x1, 0x2, 0x3 총 3개의 지갑 주소가 미리 정의되어 있습니다.
-            
-            ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%204.png)
+            ![Untitled 5](https://user-images.githubusercontent.com/49356933/219855475-dd8d92c0-b407-4155-ae57-86237a09c49e.png)
             
         - 지갑 주소 칸에 0x1을 치면, 주소의 잔액이 아래처럼 나오는걸 확인할 수 있습니다.
-            
-            ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%205.png)
+            ![Untitled 6](https://user-images.githubusercontent.com/49356933/219855488-678f9d79-89f8-4d4d-85ef-184eb293d2ac.png)
+
             
 - 왼쪽에 지갑 주소를 입력한 상태에서 오른쪽에서 송금할 수 있습니다.
     - 0x3 지갑에서, 0xabc로 20을 보내고 각각 계좌의 잔액을 확인해 보세요.
-        
-        ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%206.png)
+        ![Untitled 7](https://user-images.githubusercontent.com/49356933/219855497-a1ee84f8-5049-4860-bf80-b1e6b7942cad.png)
         
         - 왼쪽에 지갑 주소 0x3을 입력합니다
         - 오른쪽에 금액 20을 입력한 다음, transfer를 누릅니다.
@@ -93,16 +93,19 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
     
     - 새로운 터미널 2개를 엽니다. 기존의 터미널 2개는 유지해둔 채로
     
-    ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%207.png)
+    ![Untitled 8](https://user-images.githubusercontent.com/49356933/219855506-5c49cc51-bbc8-42c4-9276-8bd91a5ba179.png)
+
     
 - 클라이언트와 서버 양쪽에 cryptography 라이브러리를 설치합니다
     
-    ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%208.png)
+    ![Untitled 9](https://user-images.githubusercontent.com/49356933/219855515-43f8b817-3031-4b28-a55d-98f427bfcf75.png)
+
     
 
 - package.json이 업데이트가 되면 잘 된 것입니다.
     
-    ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%209.png)
+    ![Untitled 10](https://user-images.githubusercontent.com/49356933/219855526-6ee584a9-0014-43e7-b44a-3f705ee4eb5f.png)
+
     
 
 - 권한 문제를 해결하기 위한 방법 하나는, 유저에게 private key를 요청한 다음 그걸로 메시지를 사인해서 서버로 전송하는 것입니다.
@@ -124,7 +127,8 @@ Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
     - 이 generate 스크립트는 1회만 실행하면 됩니다.
     
 
-![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%2010.png)
+![Untitled 11](https://user-images.githubusercontent.com/49356933/219855533-290d1fa8-d2f2-42da-b9b7-206b7d8dc6a3.png)
+
 
 스크립트 내 코드입니다 ([깃헙 리포](https://github.com/remybar/alchemy-week1/blob/main/server/scripts/generate.js))
 
@@ -161,7 +165,8 @@ console.log("public key  : ", toHex(publicKey));
     - 이 튜토리얼에서는 원하는 대로 하시면 됩니다. 끝의 20자리를 써도 되고, public key 전체를 사용해도 됩니다.
     - Q. public key에 keccak hash를 적용한 다음, 20자리를 잘라서 주소로 만들어 보세요.
         
-        ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%2011.png)
+        ![Untitled 12](https://user-images.githubusercontent.com/49356933/219855543-2f86c7cf-3bd9-496b-8359-c038819c90a2.png)
+
         
         ```jsx
         
@@ -181,11 +186,13 @@ console.log("public key  : ", toHex(publicKey));
 
 - 3개의 public key를 만들었으니, 서버 파일에서 처음 준 주소 0x1 등을 이 키로 바꿔줍시다.
     
-    ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%2012.png)
+    ![Untitled 13](https://user-images.githubusercontent.com/49356933/219855551-f28756af-9266-4514-8cc0-cf569533a240.png)
+
     
 - 클라이언트쪽으로 보면 키가 바뀌어 있는것을 알 수 있습니다.
     
-    ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%2013.png)
+    ![Untitled 14](https://user-images.githubusercontent.com/49356933/219855556-612069fe-8560-4e0e-aa8d-fe5c0093033e.png)
+
     
 
 <aside>
@@ -236,7 +243,8 @@ console.log("public key  : ", toHex(publicKey));
     export default App;
     ```
     
-    ![Untitled](1%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20%E1%84%86%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20ECSDA%20%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC%20cea02c2159f94c45bc567f7a3c856bdf/Untitled%2014.png)
+    ![Untitled 15](https://user-images.githubusercontent.com/49356933/219855568-405e33c0-8c57-49b0-937e-045fe6f7019d.png)
+
     
 - 여기에서 wallet과 transfer는 각각 화면의 왼쪽, 오른쪽 콤포넌트를 담당하고 있습니다. 하나를 지우고 새로고침을 해 보면 화면 왼쪽/오른쪽이 사라지는걸 볼수 있습니다.
 - 이 둘은 상태state를 공유합니다.
