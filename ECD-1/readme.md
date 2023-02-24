@@ -334,9 +334,8 @@ console.log("public key  : ", toHex(publicKey));
 
             
 
-# 옵션 2: Signature로 권한 부여
+# 한발 더 나가기 2: Signature로 권한 부여
 
----
+### 현재 깃헙에 업로드된 내용은 Signature로 권한을 부여한 정석적인 방법입니다.
 
-- 현재 깃헙에 업로드된 내용은 Signature로 권한을 부여한 정석적인 방법입니다.
     - Q. 업로드된 코드를 읽어본 후, 옵션 1의 결과와 어떻게 다른지 대조해 보세요.
