@@ -2,7 +2,7 @@
 
 Original Repo : https://github.com/remybar/alchemy-week1
 
-This is the original Alchemy Course. Translated by BigTide.Ludium
+Link next is the source (Alchemy University - Blockchain Developer bootcamp)  Translated in kr by BigTide.Ludium
 [https://www.loom.com/share/0d3c74890b8e44a5918c4cacb3f646c4](https://www.loom.com/share/0d3c74890b8e44a5918c4cacb3f646c4)
 
 # 목차 : 
