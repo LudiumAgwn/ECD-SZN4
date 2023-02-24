@@ -205,7 +205,7 @@ console.log("public key  : ", toHex(publicKey));
 
 </aside>
 
-# 옵션 1 : Private Key 로 권한 부여
+# 한발 더 나가기 1 : Private Key 로 권한 부여
 
 
 - Public Key는 성공적으로 만들었지만, 아직 그것을 활용하지는 않은 상태입니다.
