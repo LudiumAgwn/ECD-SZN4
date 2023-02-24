@@ -1,7 +1,8 @@
 # 1회차 미션: ECSDA 노드 작성
 
-Reference to: ***Elliptic Curve Digital Signature Algorithm*** (ECDSA)
+Original Repo : https://github.com/remybar/alchemy-week1
 
+This is the original Alchemy Course. Translated by BigTide.Ludium
 [https://www.loom.com/share/0d3c74890b8e44a5918c4cacb3f646c4](https://www.loom.com/share/0d3c74890b8e44a5918c4cacb3f646c4)
 
 # 목차 : 
