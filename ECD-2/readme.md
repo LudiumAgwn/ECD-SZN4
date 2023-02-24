@@ -25,7 +25,6 @@
 
 # **OpenZeppelin Contract Wizard를 사용하여 ERC721 스마트** 컨트랙트 **개발하기**
 
----
 
 앞서 설명한 바와 같이 이 튜토리얼에서는 **OpenZeppelin 마법사를** **사용하여  스마트** **계약을** **작성합니다. OpenZeppelin을 사용하는 데에는** 두 가지 주요 이유가 있습니다.
 
@@ -57,7 +56,6 @@ ERC721 NFT 스마트 계약을 작성하기 위해 가장 먼저 **[해야** **�
 
 # **NFT(ERC721) 토큰의 기능** **선택하기**
 
----
 
 이제 스마트 계약에 포함시킬 기능들을 선택해야 합니다. 설정settings 섹션을 선택하면 기능features 섹션이 나옵니다. 여기서 스마트 계약에 포함할 다양한 모듈을 선택할 수 있습니다. 
 
@@ -142,7 +140,6 @@ contract Alchemy is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
 
 # **REMIX IDE를 사용하여 ERC721 계약** **변경** **및  도입**
 
----
 
 이제 ERC721 스마트 컨트랙트가 생겼으니, 이를 수정하여 Goerli Testnet에 배포해 보겠습니다. 우리는 Solidity와의 스마트 계약 개발을 위해 특별히 설계된 **Remix IDE를** **사용합니다. (**무료인 웹 기반 통합 개발 환경입니다!) 
 
@@ -154,7 +151,6 @@ contract Alchemy is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
 
 ## **리믹스를** **사용한 NFT 스마트** 컨트랙트 **변경**
 
----
 
 계약서 첫머리에는 코드의 라이선스를 지정하는 「SPDX-License-Identifier」가 있습니다. Web3 어플리케이션에서는 신뢰성을 확보하기 위해서 코드를 오픈소스로 유지하는 것이 좋습니다.
 
@@ -225,8 +221,6 @@ NFT의 최대 공급량을 제한했으므로 이제 스마트 계약을 컴파�
 
 # ALCHEMY **계정** **만들기 (무료)**
 
----
-
 먼저 alchemy[.com에 접속](https://alchemy.com/?a=roadtoweb3weekone)하여 "로그인"을 클릭하여 새 계정을 만들어야 합니다.
 
 ![https://files.readme.io/56d3600-web3_eco.png](https://files.readme.io/56d3600-web3_eco.png)
@@ -246,8 +240,6 @@ Ethereum 에코시스템을 선택합니다.
 다음으로 Alchemy를  Metamask에 Goerli  RPC 프로바이더로  추가해야 합니다. 메타마스크가 설치되어 있지 않은 경우 안내에 따라 브라우저에 메타마스크를 추가하고 새 지갑을 만드십시오.
 
 ## **메타마스크 지갑에 Alchemy Goerli 추가**
-
----
 
 메타마스크가 설치되면 [ 네트워크]드롭다운  메뉴를 클릭하여  [네트워크 추가]를  선택합니다.
 
@@ -270,8 +262,6 @@ Alchemy를 사용하여 메타마스크에  Goerli를 추가했다니! 대단�
 **이제** **Goerli에 Smart Contract를** 배포할 때입니다만, 그 전에 Goerli Test ETH를 취득할 필요가 있습니다.
 
 ## **무료 Goerli 테스트넷 ETH 가져오기**
-
----
 
 Goerli Test ETH를 얻는 방법은 매우  간단합니다. [goerlifaucet.com로 이동](https://goerlifaucet.com/)하여 지갑 주소를 텍스트 바에 복사한 후 " Send Me ETH "를 클릭하십시오.
 
@@ -305,8 +295,6 @@ Remix로 돌아가서 페이지 왼쪽에 있는 컴파일러compiler 메뉴를 
 
 # **NFTS 메타데이터란?**
 
----
-
 ![https://files.readme.io/8a5f1ab-octopus.png](https://files.readme.io/8a5f1ab-octopus.png)
 
 OpenSea가 ERC721 토큰의 오프체인 메타데이터를 가져오려면 (풀인 pull in) 하려면 이 NFT 컨트랙트가 **호스팅하는(=바라보는)** 메타데이터를 명시하는 **URI가 있어야 합니다.** 이 URI를  찾기 위해 OpenSea, Rarible 및 기타 인기 마켓플레이스는 ERC721Uristage 표준에 포함된 tokenURI 메서드를 사용합니다. 
@@ -316,8 +304,6 @@ tokenURI 함수는 ipfs://bafkreig4rdq3nvyg2yra5x363gdo4xtbcfjlshw63vtldyvwagbq 
 [메타데이터 표준에 대한 자세한](https://docs.opensea.io/docs/metadata-standards) 내용은 OpenSea 공식 설명서를 참조하십시오.
 
 ## **NFT 메타데이터** **포맷** **방법**
-
----
 
 OpenSea 문서에 따르면 NFT 메타데이터는 .json 파일에 저장되고 다음과 같이 구성되어야 합니다.
 
@@ -371,8 +357,6 @@ OpenSea 문서에 따르면 NFT 메타데이터는 .json 파일에 저장되고 
 ```
 
 ## 메타데이터를 작성하고 IPFS에 업로드하기
-
----
 
 filebase.com에 접속하고 새 계정을 만드세요. 
 
@@ -447,8 +431,6 @@ filebase.com에 접속하고 새 계정을 만드세요.
 
 # **Goerli NFT를 민팅해보자**
 
----
-
 Remix로 돌아가서 “Deploy & Run Transactions” 메뉴에서 “Deployed contracts”(배포된 컨트랙트)로 이동하여 방금 배포한 컨트랙트를 클릭하면 Smart Contact에 포함된 모든 메서드 목록이 나타납니다.
 
 ![https://files.readme.io/0a614b5-rin_nft.png](https://files.readme.io/0a614b5-rin_nft.png)
@@ -475,8 +457,6 @@ tokenURI 메서드에서도 동일하게 주소를 넣고 id 인수로 "0"을 �
 
 # **OpenSea에서 NFT를** **시각화**
 
----
-
 testnets.opensea.io으로 이동하여 **메타마스크** **지갑**으로 로그인하십시오. 그런 다음 프로필 사진을 클릭하면 새로 주조된 NFT를 볼 수 있습니다. 이미지가 아직 표시되지 않으면 이미지를 클릭하고 "메타데이터 새로 고침" 버튼을 클릭합니다.
 
 ![https://files.readme.io/3256828-testnet.png](https://files.readme.io/3256828-testnet.png)
@@ -487,9 +467,9 @@ testnets.opensea.io으로 이동하여 **메타마스크** **지갑**으로 로�
 
 **축하합니다. 첫** **번째** **스마트** **계약을** **성공적으로** **작성, 수정** **및** **배포했습니다. 첫 NFT를** **제작하여 IPFS에** **이미지를 공개했습니다!** 🔥
 
-**이제 다음은?** 사용자가 특정 수의 NFT만 발행할 수 있도록 스마트 계약을 수정하는 것은 어떨까요? 사용자당 5개면 충분합니다. 그렇지 않으면 누군가가 수천 개의 NFT를 발행하기 시작할 수도 있습니다.
+**이제 다음은?** 사용자가 특정 수의 NFT만 발행할 수 있도록 스마트 계약을 수정하는 것은 어떨까요? 사용자당 5개 제한이면 충분합니다. 그렇지 않으면 누군가가 수천 개의 NFT를 발행하기 시작할 수도 있습니다.
 
-그러기 위해서는 맵 타입에 대해 알아보세요.여기서 설명하는 놀라운 가이드가 있습니다.
+그러기 위해서는 맵 타입에 대해 알아보세요. 이에 대해 설명하는 놀라운 가이드가 있습니다.
 
 Proof of Knowledge NFT를 취득하려면 위의 과제를 완료하고 [#지식증명서 제출 채널의 Alchemy University Disconsidge Server에 대한](https://university.alchemy.com/discord) 리뷰를 공유할 수 있습니다. 
 
