@@ -167,9 +167,8 @@ console.log("public key  : ", toHex(publicKey));
 - Ethereum에서 주소를 만드는 방식은, public key에 keccak hash를 적용시킨 다음, 끝의 20자리를 가져오는 겁니다.
     - 이 튜토리얼에서는 원하는 대로 하시면 됩니다. 끝의 20자리를 써도 되고, public key 전체를 사용해도 됩니다.
     - Q. public key에 keccak hash를 적용한 다음, 20자리를 잘라서 주소로 만들어 보세요.
-        ![Untitled 11](https://user-images.githubusercontent.com/49356933/219855533-290d1fa8-d2f2-42da-b9b7-206b7d8dc6a3.png)
+        <img width="1439" alt="스크린샷 2023-03-03 오후 2 39 27" src="https://user-images.githubusercontent.com/125532594/222640451-cb532969-b644-42de-997d-9bca9e65c069.png">
 
-        
         
         ```jsx
         
