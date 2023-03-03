@@ -187,12 +187,16 @@ console.log("public key  : ", toHex(publicKey));
         
 
 - 3개의 public key를 만들었으니, 서버 파일에서 처음 준 주소 0x1 등을 이 키로 바꿔줍시다.
+- node generate.js를 두번 더 실행해서, public key를 두개를 더 만듭니다. 
+- 그 public key를 복사합니다
+- const balances의 string에다가 그 public key를 복사 붙여넣기 합니다. 
     
     ![Untitled 12](https://user-images.githubusercontent.com/49356933/219855543-2f86c7cf-3bd9-496b-8359-c038819c90a2.png)
 
 
     
-- 클라이언트쪽으로 보면 키가 바뀌어 있는것을 알 수 있습니다.
+- 클라이언트에서 새로고침을 하면, 키가 바뀌어 있는것을 알 수 있습니다.
+- (nodemon을 안 썼을 경우에는, 서버를 한번 껐다 켜야됩니다) 
     
     ![Untitled 13](https://user-images.githubusercontent.com/49356933/219855551-f28756af-9266-4514-8cc0-cf569533a240.png)
 
