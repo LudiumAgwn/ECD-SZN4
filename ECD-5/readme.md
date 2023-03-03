@@ -1,4 +1,4 @@
-# Ludium week 4
+# Ludium week 5
 Practice exercise for managing a simple ERC20 airdrop
 
 ## 📄 Contracts
