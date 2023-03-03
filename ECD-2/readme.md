@@ -1,4 +1,4 @@
-# 1회차 미션: ECSDA 노드 작성
+# 2회차 미션: ECSDA 노드 작성
 
 Original Repo : https://github.com/remybar/alchemy-week1
 
