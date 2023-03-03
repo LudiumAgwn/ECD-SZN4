@@ -1,4 +1,4 @@
-# Ludium week 6
+# Ludium week 7
 Practice exercise for a simple NFT staking contract
 
 ## 📄 Contracts
