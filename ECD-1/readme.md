@@ -49,7 +49,7 @@ Link next is the source (Alchemy University - Blockchain Developer bootcamp)  Tr
 
 1. `/server` 폴더에서 터미널 실행 
 2. `npm install` 을 터미널에 입력하여 디펜던시를 설치합니다
-3. `nodemon index` 를 입력해서 서버를 실행하세요.  
+3. `node index` 를 입력해서 서버를 실행하세요.  
     - *Hint* - [nodemon](https://www.npmjs.com/package/nodemon) 을 사용하면 서버에 변경이 있을 때 마다 자동으로 변경해 줍니다. instead of `node` to automatically restart the server on any changes.
     - 기본값 서버 포트인 3042로
 
