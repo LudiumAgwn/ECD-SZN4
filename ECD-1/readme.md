@@ -128,6 +128,7 @@ Link next is the source (Alchemy University - Blockchain Developer bootcamp)  Tr
 - 서버 폴더에 새 script를 폴더로 이동하면 generate.js라는 파일을 엽니다. 
     - 실행하면 private key가 하나 랜덤하게 생성되는 스크립트입니다.
     - 이 generate 스크립트는 1회만 실행하면 됩니다.
+    - `node generate.js` 로 실행시키세요
     
 ![Untitled 10](https://user-images.githubusercontent.com/49356933/219855526-6ee584a9-0014-43e7-b44a-3f705ee4eb5f.png)
 
